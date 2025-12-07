@@ -1,0 +1,19 @@
+[project]
+name = "drone-trace"
+version = "0.1.0"
+description = "A simple library for parsing, processing, and visualizing drone flight data."
+readme = "README.md"
+authors = [
+    { name = "Brandon Lotero", email = "blotero@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.3.3",
+]
+
+[project.scripts]
+drone-trace = "drone_trace:main"
+
+[build-system]
+requires = ["uv_build>=0.9.12,<0.10.0"]
+build-backend = "uv_build"
