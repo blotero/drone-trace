@@ -11,9 +11,20 @@ dependencies = [
     "pandas>=2.3.3",
 ]
 
-[project.scripts]
-drone-trace = "drone_trace:main"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.19.0",
+    "ruff>=0.14.8",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["drone_trace*"]
+
 
 [build-system]
-requires = ["uv_build>=0.9.12,<0.10.0"]
-build-backend = "uv_build"
+requires = ["setuptools>=80", "wheel"]
+build-backend = "setuptools.build_meta"
