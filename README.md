@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.png" alt="drone-trace Logo" width="300">
+</p>
+
 # drone-trace
 
 A simple library for parsing, processing, and visualizing drone flight data from DJI SRT files.
